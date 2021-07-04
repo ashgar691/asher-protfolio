@@ -1,0 +1,18 @@
+@import '../../styles/vars.scss';
+
+.home{
+    height: $vh-100;
+    &__content{
+        .main-color{
+            color: $main_color;
+        }
+        
+        h1{
+            font-size: 5rem;
+            line-height: 1;
+        }
+        h2{
+            font-size: 2rem;
+        }
+    }
+}
