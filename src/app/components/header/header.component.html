@@ -1,0 +1,49 @@
+<div class="header" [ngClass]="{'header--active':isActive}">
+    <div class="container">
+        <section class="header__image">
+            <div class="row">
+                <div class="col-lg-12 ">
+                    <div class="header__image-continer">
+
+                        <img class="img-fluid" src="https://picsum.photos/300/300" alt="">
+                    </div>
+                    <h2 class="text-center">Asher Abeve</h2>
+                    <h4 class="text-center">Web Developer</h4>
+                </div>
+            </div>
+        </section>
+        <section class="header__links">
+            <div class="container d-flex">
+                <a target="_blank" href="https://facebook.com">
+                    <i class="fab fa-facebook-square"></i>
+                </a>
+                <a target="_blank" href="https://facebook.com">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a target="_blank" href="https://facebook.com">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a target="_blank" href="https://facebook.com">
+                    <i class="fab fa-instagram"></i>
+                </a>
+            </div>
+        </section>
+        <section class="header__nav">
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#resume">Resume</a></li>
+                    <li><a href="#porfolio">Porfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </section>
+    </div>
+</div>
+
+<div class="menu-btn-container">
+    <button mat-fab (click)="toggleMenu()">
+        <i class="fad fa-bars"></i>
+    </button>
+</div>
