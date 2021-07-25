@@ -2,4 +2,33 @@
 
 .about{
     height: $vh-100;
+
+    h1{
+        position: relative;
+        overflow: hidden;
+        z-index: 2;
+    }
+    h1:after{
+        content: '';
+        position: absolute;
+        width: 0;
+        height: 4px;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        display: inline-block;
+        background-color: #fa582d;
+        transition: width .25s ease-in-out;
+    
+    }
+    // h1:hover { border-width: 7px; }
+    img{
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+    }
+    &__content{
+        margin-right: 50px;
+        margin-left: 50px;
+    }
 }
